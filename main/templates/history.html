@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block body %}
+<a class="btn btn-primary" href="/" role="button">back to search</a>
+<div class="container">
+    <h3>Previous Searches</h3>
+      {% for i in context %}
+      <div class="card" style="width: 18rem; ">
+        <img src="https://source.unsplash.com/100x100/?{{i.city}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{i.city}}</h5>
+          <p class="card-text">{{i.temp}}</p>
+        </div>
+      </div>
+      {% endfor %}
+</div>
+
+{% endblock body %}
