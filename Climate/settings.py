@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)56_71wgvi-$v#&@i9%5g=xv8j&g+r#_f@alv14z)53qvmtqjb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aniket-weather-app-final.herokuapp.com','127.0.0.1']
 
 
 # Application definition
